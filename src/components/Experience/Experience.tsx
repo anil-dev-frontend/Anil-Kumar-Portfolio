@@ -1,54 +1,35 @@
 import { experiences } from "../../constants";
 
-
 export default function Experience() {
   return (
-<section
+    <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 pb-24 px-[6vw] md:px-[7vw] lg:px-[10vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
+        <h2 className="text-4xl font-bold text-white uppercase tracking-wider">EXPERIENCE</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          A collection of my work experience and the roles I have taken in
-          various organizations
+          A collection of my professional journey and roles
         </p>
       </div>
 
-      {/* Experience Timeline */}
-      <div className="relative">
-        {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
-
-        {/* Experience Entries */}
-        {experiences.map((experience, index) => (
+      {/* Grid Layout: Mobile me 1 column, Desktop me 3 columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        {experiences.map((experience) => (
           <div
             key={experience.id}
-            className={`flex flex-col sm:flex-row items-center mb-16 ${
-              index % 2 === 0 ? "sm:justify-end" : "sm:justify-start"
-            }`}
+            className="w-full max-w-[400px] h-full"
           >
-            {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
-              <img
-                src={experience.img}
-                alt={experience.company}
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div>
-
-            {/* Content Section */}
+            {/* Experience Card */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
-              } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}
+              className="h-full p-6 rounded-2xl border border-white/20 bg-gray-900/80 backdrop-blur-md 
+              shadow-[0_0_20px_1px_rgba(130,69,236,0.2)] flex flex-col transform transition-all duration-300 hover:-translate-y-2 hover:border-purple-500/50"
             >
-              {/* Flex container for image and text */}
-              <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+              {/* Header: Logo and Info */}
+              <div className="flex items-center space-x-4 mb-6">
+                <div className="w-14 h-14 bg-white rounded-lg overflow-hidden shrink-0">
                   <img
                     src={experience.img}
                     alt={experience.company}
@@ -56,29 +37,30 @@ export default function Experience() {
                   />
                 </div>
 
-                {/* Role, Company Name, and Date */}
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                      {experience.role}
-                    </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
-                      {experience.company}
-                    </h4>
-                  </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                <div className="flex flex-col overflow-hidden">
+                  <h3 className="text-lg font-bold text-white truncate">
+                    {experience.role}
+                  </h3>
+                  <h4 className="text-sm text-purple-400 font-medium truncate">
+                    {experience.company}
+                  </h4>
+                  <span className="text-[11px] text-gray-500 mt-1">{experience.date}</span>
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
-              <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
-                <ul className="flex flex-wrap mt-2">
-                  {experience.skills.map((skill, index) => (
+              {/* Description */}
+              <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+                {experience.desc}
+              </p>
+
+              {/* Skills Tags */}
+              <div className="mt-auto pt-4 border-t border-white/10">
+                <h5 className="font-semibold text-white text-[11px] mb-3 uppercase tracking-tighter">Tech Stack:</h5>
+                <ul className="flex flex-wrap gap-2">
+                  {experience.skills.map((skill, idx) => (
                     <li
-                      key={index}
-                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
+                      key={idx}
+                      className="bg-[#8245ec]/10 text-purple-300 px-2.5 py-1 text-[10px] font-medium rounded-md border border-purple-500/20"
                     >
                       {skill}
                     </li>
@@ -90,5 +72,5 @@ export default function Experience() {
         ))}
       </div>
     </section>
-  )
+  );
 }
