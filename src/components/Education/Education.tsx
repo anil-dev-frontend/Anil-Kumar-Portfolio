@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
 
-class Education extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+
+export default function Education() {
+  return (
+    <div>Education</div>
+  )
 }
-
-export default Education;

@@ -30,10 +30,10 @@ export default function About() {
             <Typewriter
               options={{
                 strings: [
-                  "Angular Frontend Developer",
-                  "UI-Focused Angular Engineer",
-                  "Single Page Application Specialist",
-                  "Frontend Problem Solver",
+                  "Frontend Developer",
+                  "Single Page Apps",
+                  "Reusable Components",
+                  "Angular Engineering",
                 ],
                 autoStart: true,
                 loop: true,

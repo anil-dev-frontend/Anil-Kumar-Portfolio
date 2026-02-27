@@ -76,7 +76,7 @@ export const Navbar = () => {
         {/* Social Icons */}
         <div className="hidden md:flex space-x-4">
           <a
-            href="https://github.com/codingmastr"
+            href="https://github.com/anil-dev-frontend"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -84,7 +84,7 @@ export const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+            href="https://www.linkedin.com/in/anil-kumar-8bb69413a"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -125,8 +125,22 @@ export const Navbar = () => {
               </li>
             ))}
             <div className="flex space-x-4">
-              <FaGithub size={24} />
-              <FaLinkedin size={24} />
+              <a
+                href="https://github.com/anil-dev-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaGithub size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/anil-kumar-8bb69413a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <FaLinkedin size={24} />
+              </a>
             </div>
           </ul>
         </div>
