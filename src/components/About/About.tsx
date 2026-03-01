@@ -21,38 +21,38 @@ export default function About() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
             Anil Kumar
           </h2>
-  
+
           {/* Typing Effect */}
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight">
-          <span className="text-white">I am a </span>
+            <span className="text-white">I am a </span>
 
-          <span className="inline-block text-[#8245ec]">
-            <Typewriter
-              options={{
-                strings: [
-                  "Frontend Developer",
-                  "Single Page Apps",
-                  "Reusable Components",
-                  "Angular Engineering",
-                ],
-                autoStart: true,
-                loop: true,
-                delay: 100,
-                deleteSpeed: 50,
-              }}
-            />
-          </span>
-        </h3>
+            <span className="inline-block text-[#8245ec]">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Frontend Developer",
+                    "Single Page Apps",
+                    "Reusable Components",
+                    "Angular Engineering",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  deleteSpeed: 50,
+                }}
+              />
+            </span>
+          </h3>
 
           {/* About text */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
             I am an Angular Frontend Developer with 3+ years of experience in
-          building responsive, performance-optimized, and scalable web
-          applications. I have strong expertise in Angular, TypeScript,
-          JavaScript, RxJS, Signals, REST API integration, and Angular Material,
-          along with working knowledge of CSS, SCSS, and Bootstrap. I focus on
-          clean code, reusable components, and delivering high-quality user
-          experiences.
+            building responsive, performance-optimized, and scalable web
+            applications. I have strong expertise in Angular, TypeScript,
+            JavaScript, RxJS, Signals, REST API integration, and Angular Material,
+            along with working knowledge of CSS, SCSS, and Bootstrap. I focus on
+            clean code, reusable components, and delivering high-quality user
+            experiences.
           </p>
 
           {/* Resume Button */}

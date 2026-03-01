@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
-
 interface MenuItem {
   id: string;
   label: string;
@@ -38,6 +37,7 @@ export const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
+    { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];
 

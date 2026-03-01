@@ -2,12 +2,10 @@
 
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import type { JSX } from "react/jsx-runtime";
-
 interface NavItem {
   name: string;
   id: string;
 }
-
 interface SocialItem {
   icon: JSX.Element;
   link: string;

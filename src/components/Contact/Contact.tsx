@@ -1,6 +1,6 @@
 
 
-import React, { useRef, useState, type FormEvent,  } from "react";
+import { useRef, useState, type FormEvent, } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -108,9 +108,10 @@ export default function Contact() {
           />
           <button
             type="submit"
+            disabled={isSent}
             className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition"
           >
-            Send
+            {isSent ? "Message Sent" : "Send"}
           </button>
         </form>
       </div>

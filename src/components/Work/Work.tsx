@@ -1,13 +1,9 @@
 import { useState } from "react";
 import { projects } from "../../constants";
-
-/* Swiper */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-
 import "./work-swiper.css";
-
 interface Project {
   id: number;
   title: string;
