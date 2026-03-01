@@ -31,13 +31,22 @@ export default function Education() {
         {education.map((edu: EducationItem) => (
           <div
             key={edu.id}
-            className="relative p-8 rounded-2xl border border-white/10 bg-gray-900
-              shadow-[0_0_25px_rgba(130,69,236,0.25)]
-              transition-all duration-300 hover:-translate-y-2 hover:shadow-purple-500/40"
+            className="
+              project-card
+              h-full min-h-[440px]
+              flex flex-col
+              bg-[#111827]
+              border border-white
+              rounded-2xl
+              p-8
+              cursor-pointer
+              transition-transform duration-300
+              hover:-translate-y-2
+            "
           >
             {/* ===== Logo ===== */}
             <div className="flex justify-center mb-6">
-              <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-md">
+              <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center overflow-hidden">
                 <img
                   src={edu.img}
                   alt={edu.school}
@@ -57,7 +66,7 @@ export default function Education() {
             </p>
 
             {/* ===== Date ===== */}
-            <p className="text-gray-500 text-sm text-center mt-1">
+            <p className="text-gray-400 text-sm text-center mt-1">
               {edu.date}
             </p>
 
