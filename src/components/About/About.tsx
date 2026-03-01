@@ -1,7 +1,7 @@
 
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
-import profileImage from "../../assets/profile2.jpeg";
+import profileImage from "../../assets/profile_3.jpg";
 
 export default function About() {
   return (
