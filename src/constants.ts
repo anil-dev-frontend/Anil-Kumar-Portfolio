@@ -26,9 +26,9 @@ import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/incapp-logo-box.webp';
 
 // Education Section Logo's
-import glaLogo from './assets/education_logo/gla_logo.png';
-import bsaLogo from './assets/education_logo/bsa_logo.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
+import iecLogo from './assets/education_logo/iec.jpeg';
+import upBoardLogo from './assets/education_logo/upborad.jpeg';
+
 
 // Project Section Logo's
 import designsystemLogo from './assets/work_logo/designsystem.png';
@@ -220,44 +220,7 @@ export const experiences = [
   },
 ];
   
-  export const education = [
-    {
-      id: 0,
-      img: glaLogo,
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
-      grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Master of Computer Applications - MCA",
-    },
-    {
-      id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
-    },
-    {
-      id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
-    },
-    {
-      id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
-    },
-  ];
+ 
   
   // export const projects = [
   //   {
@@ -363,9 +326,23 @@ export const experiences = [
     tags: [
       "Angular",
       "TypeScript",
+      "JavaScript",
+      "RxJS",
+      "Angular Material",
+      "PrimeNG",
+      "signals",
+      "lazy loading",
+      "form validation",
+      "route guards",
+      "API Integration",
+      "Performance Optimization",
       "Custom UI Library",
       "Design System",
       "Reusable Components",
+      "Html",
+      "Css",
+      "Bootstrap",
+      "Git",
     ],
     github: "",
     webapp:
@@ -381,9 +358,23 @@ export const experiences = [
     tags: [
       "Angular",
       "TypeScript",
-      "Auth Flow",
-      "Reusable Services",
-      "Enterprise Architecture",
+      "JavaScript",
+      "RxJS",
+      "Angular Material",
+      "PrimeNG",
+      "signals",
+      "lazy loading",
+      "form validation",
+      "route guards",
+      "API Integration",
+      "Performance Optimization",
+      "Custom UI Library",
+      "Design System",
+      "Reusable Components",
+      "Html",
+      "Css",
+      "Bootstrap",
+      "Git",
     ],
     github:
       "https://github.com/anil-dev-frontend/angular-enterprise",
@@ -399,10 +390,14 @@ export const experiences = [
     image: companayLogo,
     tags: [
       "Angular",
-      "Company Website",
-      "Responsive Design",
-      "HTML",
-      "CSS",
+      "TypeScript",
+      "JavaScript",
+      "RxJS",
+      "Angular Material",
+      "Html",
+      "Css",
+      "Bootstrap",
+      "Git",
     ],
     github: "",
     webapp:
@@ -417,6 +412,12 @@ export const experiences = [
     image: portfoliLogo,
     tags: [
       "React JS",
+      "TYpeScript",
+      "JavaScript",
+      "API Integration",
+      "Fetch",
+      "Axios",
+      "React Router",
       "Tailwind CSS",
       "Portfolio",
       "Responsive UI",
@@ -426,4 +427,33 @@ export const experiences = [
       "https://github.com/anil-dev-frontend/Anil-Kumar-Portfolio",
     webapp: "",
   },
+];
+export const education = [
+  {
+  id: 0,
+  img: iecLogo,
+  school: "IEC College Of Engineering & Technology, Greater Noida, Uttar Pradesh",
+  date: "2013 – 2017",
+  grade: "74%",
+  desc: "I completed my Bachelor of Technology (B.Tech) from IEC College Of Engineering & Technology, Greater Noida. During my academic journey, I developed strong analytical and problem-solving skills. Over time, my interest in software development and technology grew, which motivated me to transition into the IT field and build a career in frontend and web development.",
+  degree: "Bachelor of Technology (B.Tech)",
+},
+  {
+  id: 1,
+  img: upBoardLogo,
+  school: "Ram Narayan Intermediate College, Katya, Uttar Pradesh",
+  date: "2011 – 2012",
+  grade: "76%",
+  desc: "I completed my Intermediate (Class XII) education from Ram Narayan Intermediate College, Katya, under the Uttar Pradesh Board. I studied Physics, Chemistry, and Mathematics (PCM), which strengthened my analytical thinking and problem-solving abilities.",
+  degree: "Intermediate (Class XII) – UP Board (PCM)",
+},
+{
+  id: 2,
+  img: upBoardLogo,
+  school: "Shri Baburam Intermediate College, Lamkan, Uttar Pradesh",
+  date: "2009 – 2010",
+  grade: "64%",
+  desc: "I completed my High School (Class X) education from Shri Baburam Intermediate College, Lamkan, under the Uttar Pradesh Board. My studies provided a solid academic foundation and discipline for higher education.",
+  degree: "High School (Class X) – UP Board",
+}
 ];
